@@ -112,6 +112,11 @@ class Home extends StatelessWidget { //widget cannot change over time
             padding: EdgeInsets.all(40.0),
             color: Colors.amberAccent,
             child: Text('three'),
+          ),
+          Container(
+            padding: EdgeInsets.all(50.0),
+            color: Colors.greenAccent,
+            child: Text('four'),
           )
         ],
       ),

@@ -88,36 +88,69 @@ class Home extends StatelessWidget { //widget cannot change over time
       //   ],
       // ),
 
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      // body: Column(
+      //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //   crossAxisAlignment: CrossAxisAlignment.stretch,
+      //   children: <Widget>[
+      //     Row(
+      //       children: <Widget>[
+      //         Text('hello'),
+      //         Text(', world')
+      //       ],
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(20.0),
+      //       color: Colors.cyan,
+      //       child: Text('one'),
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(30.0),
+      //       color: Colors.lightBlue,
+      //       child: Text('two'),
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(40.0),
+      //       color: Colors.amberAccent,
+      //       child: Text('three'),
+      //     ),
+      //     Container(
+      //       padding: EdgeInsets.all(50.0),
+      //       color: Colors.greenAccent,
+      //       child: Text('four'),
+      //     )
+      //   ],
+      // ),
+
+      body: Row(
         children: <Widget>[
-          Row(
-            children: <Widget>[
-              Text('hello'),
-              Text(', world')
-            ],
+          Expanded(
+              child: Image.asset('assets/joshua-rawson-harris.jpg'),
+            flex: 3,
           ),
-          Container(
-            padding: EdgeInsets.all(20.0),
-            color: Colors.cyan,
-            child: Text('one'),
+          Expanded(
+            flex: 3,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.cyan,
+              child: Text('1'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(30.0),
-            color: Colors.lightBlue,
-            child: Text('two'),
+          Expanded(
+            flex: 2,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.pinkAccent,
+              child: Text('2'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(40.0),
-            color: Colors.amberAccent,
-            child: Text('three'),
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(30.0),
+              color: Colors.amber,
+              child: Text('3'),
+            ),
           ),
-          Container(
-            padding: EdgeInsets.all(50.0),
-            color: Colors.greenAccent,
-            child: Text('four'),
-          )
         ],
       ),
 
